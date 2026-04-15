@@ -18,7 +18,6 @@ public class ChatController {
     @Resource
     private ChatModel chatModel;
 
-
     @GetMapping(value = "/hello/word")
     public String hello() {
         return "helloWord";
