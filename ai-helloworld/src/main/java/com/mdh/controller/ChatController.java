@@ -28,6 +28,7 @@ public class ChatController {
        return chatModel.call(msg);
     }
 
+    //
     @GetMapping(value = "/hello/doStreamChat")
     public Flux<String> doStreamChat(@RequestParam(name = "msg", defaultValue = "你是谁") String msg) {
         return chatModel.stream(msg);
